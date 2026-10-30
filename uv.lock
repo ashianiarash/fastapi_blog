@@ -234,10 +234,14 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "fastapi", extra = ["all"] },
+    { name = "jinja2" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "fastapi", extras = ["all"], specifier = ">=0.162.0" }]
+requires-dist = [
+    { name = "fastapi", extras = ["all"], specifier = ">=0.162.0" },
+    { name = "jinja2", specifier = ">=3.1.6" },
+]
 
 [[package]]
 name = "fastapi-cli"
